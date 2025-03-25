@@ -17,6 +17,12 @@ ul.children[1]; // select the second li element
 ul.children; // select all li elements (select child elements nodes only)
 ul.childNodes; // select all child nodes (select child elements nodes and text nodes: like lines break and white space)
 
+const liFirst = document.querySelector('ul');
+liFirst.parentElement; // select the nearest parent element of the ul element, which is the body element
+liFirst.parentNode; // select the nearest parent node of the ul element, which is the body element
+liFirst.closest('body'); // select the nearest parent element of the ul element, which is the body element
+liFirst.closest('header'); // select the nearest parent element of the ul element, null because the ul element is not inside the header element
+
 const listItemElements = document.getElementsByTagName('li');
 for( const listItemEl of listItemElements){
     console.dir(listItemEl);
