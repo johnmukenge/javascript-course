@@ -11,6 +11,12 @@ li.textContent = listItemElements.textContent + '(Changed)';
 const body = document.body;
 body.querySelector('ul').appendChild(li);
 
+const ul = document.querySelector('ul');
+ul.querySelectorAll('li');
+ul.children[1]; // select the second li element
+ul.children; // select all li elements (select child elements nodes only)
+ul.childNodes; // select all child nodes (select child elements nodes and text nodes: like lines break and white space)
+
 const listItemElements = document.getElementsByTagName('li');
 for( const listItemEl of listItemElements){
     console.dir(listItemEl);
