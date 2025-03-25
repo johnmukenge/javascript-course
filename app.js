@@ -23,6 +23,11 @@ liFirst.parentNode; // select the nearest parent node of the ul element, which i
 liFirst.closest('body'); // select the nearest parent element of the ul element, which is the body element
 liFirst.closest('header'); // select the nearest parent element of the ul element, null because the ul element is not inside the header element
 
+ul.previousSibling; // select the previous sibling of the ul element, which is the text node
+ul.previousElementSibling; // select the previous sibling element of the ul element, which is the header element
+ul.nextSibling; // select the next sibling of the ul element, which is the text node
+ul.nextElementSibling; // select the next sibling element of the ul element, which is the script element
+
 const listItemElements = document.getElementsByTagName('li');
 for( const listItemEl of listItemElements){
     console.dir(listItemEl);
