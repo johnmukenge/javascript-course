@@ -28,6 +28,10 @@ ul.previousElementSibling; // select the previous sibling element of the ul elem
 ul.nextSibling; // select the next sibling of the ul element, which is the text node
 ul.nextElementSibling; // select the next sibling element of the ul element, which is the script element
 
+const ul1 = document.body.firstChildElement.nextElementSibling; // select the next sibling element of the first child element of the body element, which is the ul element
+const firstLi = ul1.firstElementChild; // select the first child element of the ul element, which is the first li element
+firstLi.parentElement; // select the nearest parent element of the first li element, which is the ul element
+
 const listItemElements = document.getElementsByTagName('li');
 for( const listItemEl of listItemElements){
     console.dir(listItemEl);
