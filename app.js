@@ -54,6 +54,14 @@ button.addEventListener('click', () => {
     section.classList.toggle('invisible');
 });
 
+section.innerHTML = '<h2> A new title!</h2>';
+const list = document.querySelector('ul');
+list.innerHTML = list.innerHTML + '<li>Item 4</li>';
+
+const div = document.querySelector('div');
+div.innerHTML = div.innerHTML + '<p>Something went wrong!</p>'; // 
+div.insertAdjacentHTML('beforeend', '<p>Something went wrong!</p>'); // insert a new paragraph element before the end of the div element
+
 
 /*const listItemElements = document.getElementsByTagName('li');
 for( const listItemEl of listItemElements){
