@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>DOM Interaction</title>
-        <script src="app.js" defer></script>
-        <!-- defer significa scarica il file prima e lo si può usare anche dopo -->
-    <head>
-    <body>
-        <header>
-             <!-- console.dir(document.getElementById('main-title'))-->
-              <!--const h1 = document.getElementById("main-title") 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM Interaction</title>
+    <style>
+      .red-bg {
+        background-color: red;
+        color: white;
+      }
+      .visible {
+        display: block;
+      }
+      .invisible {
+        display: none;
+      }
+    </style>
+    <script src="app.js" defer></script>
+    <!-- defer significa scarica il file prima e lo si può usare anche dopo -->
+  </head>
+  <body>
+    <header>
+      <!-- console.dir(document.getElementById('main-title'))-->
+      <!--const h1 = document.getElementById("main-title") 
               Selezionare h1 senza id const h1 = document.querySelector("h1")
               h1.textContent = "Dive into DOM!"
               h1.className = "title"
               h1.style.color = "red"
               Si può salvare l'element in una variabile per poi accedere ai suoi metodi e proprietà con la dot notation 
               -->
-            <h1 id="main-title">Dive into DOM!</h1>
-        </header>
-        <ul>
-            <!-- Nel documento si può usare anche document.getElementByClassName('list-item') 
-            usare document.querySelectorAll('.list-item') per selezionare tutti gli elementi con la stessa classe
-            usare document.querySelector('.list-item') per selezionare il primo elemento con la stessa classe
-            usare document.querySelector('ul li:first-of-type') per selezionare il primo elemento di una lista elemento con la stessa classe
-            usare document.querySelector('ul li:nth-of-type(2)') per selezionare l'elemento in posizione 2 di una lista elemento con la stessa classe
-            usare document.querySelector('ul li:nth-child(2)') per selezionare l'elemento in posizione 2 di una lista elemento con la stessa classe
-            usare document.querySelector('ul li:last-of-type') per selezionare l'ultimo elemento di una lista elemento con la stessa classe
-            -->
-            <li class="list-item">Item 1</li>
-            <li class="list-item">Item 2</li>
-            <li class="list-item">Item 3</li>
-            <!-- Access to allList = document.querySelectorAll('li') 
-             allList[2]-->
-        </ul>
-        <input type="text" value="default text" />
-    </body>
+      <h1 id="main-title">Dive into DOM!</h1>
+    </header>
+    <section class="red-bg">
+      <ul>
+        <!-- Nel documento si può usare anche document.getElementByClassName('list-item') 
+                usare document.querySelectorAll('.list-item') per selezionare tutti gli elementi con la stessa classe
+                usare document.querySelector('.list-item') per selezionare il primo elemento con la stessa classe
+                usare document.querySelector('ul li:first-of-type') per selezionare il primo elemento di una lista elemento con la stessa classe
+                usare document.querySelector('ul li:nth-of-type(2)') per selezionare l'elemento in posizione 2 di una lista elemento con la stessa classe
+                usare document.querySelector('ul li:nth-child(2)') per selezionare l'elemento in posizione 2 di una lista elemento con la stessa classe
+                usare document.querySelector('ul li:last-of-type') per selezionare l'ultimo elemento di una lista elemento con la stessa classe
+                -->
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+        <!-- Access to allList = document.querySelectorAll('li') 
+                allList[2]-->
+      </ul>
+    </section>
+    <button>Toggle Visibility</button>
+    <input type="text" value="default text" />
+  </body>
 </html>

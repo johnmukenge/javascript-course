@@ -1,6 +1,6 @@
 //const listItemElements = document.querySelectorAll('li');
 
-const h1 = document.getElementById('main-title');
+/*const h1 = document.getElementById('main-title');
 h1.textContent = 'Some new title!';
 h1.style.color = 'white';
 h1.style.backgroundColor = 'black';
@@ -32,7 +32,30 @@ const ul1 = document.body.firstChildElement.nextElementSibling; // select the ne
 const firstLi = ul1.firstElementChild; // select the first child element of the ul element, which is the first li element
 firstLi.parentElement; // select the nearest parent element of the first li element, which is the ul element
 
-const listItemElements = document.getElementsByTagName('li');
+
+const section = document.querySelector('section'); // select the section element
+section.style.backgroundColor = 'green'; // change the background color of the section element to green
+const button = document.querySelector('button'); // select the button element
+
+section.className = 'red-bg';*/ // change the class of the section element
+const section = document.querySelector('section'); // select the section element
+const button = document.querySelector('button'); // select the button element
+
+section.className = 'red-bg';
+button.addEventListener('click', () => {
+    /*if(section.className === 'red-bg visible'){
+        section.className = 'red-bg invisible'; // change the class of the section element
+    } else{
+        section.className = 'red-bg visible'; // change the class of the section element
+    }
+    section.className = 'red-bg visible';*/ // change the class of the section element
+
+    //section.classList.toggle('visible');
+    section.classList.toggle('invisible');
+});
+
+
+/*const listItemElements = document.getElementsByTagName('li');
 for( const listItemEl of listItemElements){
     console.dir(listItemEl);
-}
+}*/
